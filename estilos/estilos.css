@@ -14,6 +14,76 @@ body{
     
     
 }
+/*pseudoclases para el menu*/
+
+
+
+  .nav-link:hover{
+      font-weight: bold;
+     background:rgb(112, 107, 107);
+     text-decoration: underline;
+    cursor: pointer;
+     padding: 5px;
+    margin: 5px 0;
+    
+    border-radius: 5px;
+}
+/* Enlaces No Visitados*/
+
+ .nav-link:link{
+    text-decoration:overline;
+    color: rgb(23, 206, 23);
+}
+/*Enlaces Visitados*/
+.nav-link:visited{
+ color: rgb(51, 51, 131);
+ text-decoration: none;
+}
+/*Activo*/
+.nav-link:active{
+    background-color: aqua;
+    color: black;
+}
+.card-img-top:hover{
+  transform: scale(1.1 , 1.1); 
+  margin-left:5px;
+  padding:10px 5px ;
+  border-radius: 5%;
+}
+.card-img-top:active{
+    opacity: 0.5;
+}
+.card-img-top:active{
+    opacity: 0.5;
+}
+/*EXCLUIR Elementos*/
+
+div:not(.titulo){
+    border: white solid 5px;
+
+}
+/*excluir Imagenes seccion cartas*/
+div:not(.card){
+    border: white solid 5px;
+
+}
+
+/*estilos para los hijos (parrafos del index)*/
+.card img:nth-child(1){
+   
+    background-color:rgb(56, 196, 105);
+}
+/*aca no se como se hace porque no me toma el parrafo
+sera porque uso las filas y col de boots?*/
+ .content p:first-child {
+    background-color: rgb(43, 43, 212);
+    font-size: 50px;
+}
+
+/*seleccion */
+::selection{
+    color: rgb(96, 96, 196);
+}
 
 h1{
     font-size: 5rem;
@@ -70,4 +140,24 @@ p{
         transform: translate(0);
         opacity: 1;
     }
+}
+/*formularios*/
+.formulario .form-control:focus{
+    border: 2px solid rgb(20, 33, 109);
+}
+.formulario .correo:invalid{
+background: rgb(206, 85, 85);
+}
+.formulario .correo:valid{
+background: white;
+}
+
+.redes a{
+    font-size: 2rem;
+    color:white;
+    margin: 5rem;
+    
+}
+.redes a:hover{
+    color: blue;
 }
