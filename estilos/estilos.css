@@ -1,163 +1,85 @@
-
-*{
-    margin: 0;
-    padding: 0;
-   font-family: 'Exo 2' , sans-serif;
-   text-transform: capitalize;
-   transition: all .2rem linear;
-    
+body {
+  background: black;
 }
 
-
-body{
-    background-image: linear-gradient(black, rgb(29, 26, 26));
-    
-    
+/*Anidamiento*/
+.lista {
+  list-style: none;
 }
-/*pseudoclases para el menu*/
-
-
-
-  .nav-link:hover{
-      font-weight: bold;
-     background:rgb(112, 107, 107);
-     text-decoration: underline;
-    cursor: pointer;
-     padding: 5px;
-    margin: 5px 0;
-    
-    border-radius: 5px;
+.lista .itemLista {
+  padding: 16px;
+  display: inline-block;
 }
-/* Enlaces No Visitados*/
-
- .nav-link:link{
-    text-decoration:overline;
-    color: rgb(23, 206, 23);
+.lista .itemLista:hover {
+  background-color: #5c3f3f;
+  border-radius: 10%;
 }
-/*Enlaces Visitados*/
-.nav-link:visited{
- color: rgb(51, 51, 131);
- text-decoration: none;
+.lista .itemLista .enlaceLista {
+  text-decoration: none;
+  font-size: 16px;
+  color: blue;
 }
-/*Activo*/
-.nav-link:active{
-    background-color: aqua;
-    color: black;
+.lista .itemLista .enlaceLista:active {
+  border: solid aqua 1px;
 }
-.card-img-top:hover{
-  transform: scale(1.1 , 1.1); 
-  margin-left:5px;
-  padding:10px 5px ;
-  border-radius: 5%;
+.lista .itemLista .enlaceLista:link {
+  color: rebeccapurple;
 }
-.card-img-top:active{
-    opacity: 0.5;
-}
-.card-img-top:active{
-    opacity: 0.5;
-}
-/*EXCLUIR Elementos*/
-
-div:not(.titulo){
-    border: white solid 5px;
-
-}
-/*excluir Imagenes seccion cartas*/
-div:not(.card){
-    border: white solid 5px;
-
+.lista .itemLista .enlaceLista:visited {
+  color: #6d6d6d;
+  background-color: beige;
 }
 
-/*estilos para los hijos (parrafos del index)*/
-.card img:nth-child(1){
-   
-    background-color:rgb(56, 196, 105);
+.principal {
+  background-color: #0c0c0c;
 }
-/*aca no se como se hace porque no me toma el parrafo
-sera porque uso las filas y col de boots?*/
- .content p:first-child {
-    background-color: rgb(43, 43, 212);
-    font-size: 50px;
+.principal .titulo {
+  padding-top: 30%;
+  font-size: 50px;
+  color: #4dc86e;
+  text-align: center;
 }
-
-/*seleccion */
-::selection{
-    color: rgb(96, 96, 196);
+.principal .titulo2 {
+  font-size: 30px;
+  color: #490101;
 }
-
-h1{
-    font-size: 5rem;
-    font-family: 'lemonada',sans-serif;
-    font-weight: bolder;
-    text-shadow: .1rem .1rem .3rem #333;
-    color: rgb(117, 150, 117);
-    padding-top: 35%;
-    animation-name:texto;
-    animation-iteration-count:1;
-    animation-duration: 5s;
-}
-@keyframes texto {
-    from{
-        transform: translate(-200px);
-        opacity: 0;
-    }
-    to{
-        transform: translate(0);
-        opacity: 1;
-    }
-}
-h2{
-    font-size: 3.5rem;
-    font-family: 'lemonada',sans-serif;
-    font-weight: bolder;
-    text-shadow: .1rem .1rem .3rem #333;
-    color:white;
-    margin: 1rem 0;
-    animation-name:texto;
-    animation-iteration-count:1;
-    animation-duration: 5s
-}
-p{
-    font-size: 1.6rem;
-    color: #ccc;
+.principal .textoIndex {
+  font-size: 20px;
+  color: white;
 }
 
-/*estilos Historia*/
-
-.texto{
-    font-family: sans-serif;
-    font-size: 25px;
-    animation-name:parrafo;
-    animation-iteration-count:1;
-    animation-duration: 5s
+.historia {
+  background: black;
 }
-@keyframes parrafo {
-    from{
-        transform: translate(-200px);
-        opacity: 0;
-    }
-    to{
-        transform: translate(0);
-        opacity: 1;
-    }
+.historia .titulo1 {
+  color: white;
 }
-/*formularios*/
-.formulario .form-control:focus{
-    border: 2px solid rgb(20, 33, 109);
-}
-.formulario .correo:invalid{
-background: rgb(206, 85, 85);
-}
-.formulario .correo:valid{
-background: white;
+.historia .texto {
+  color: white;
+  padding: 15px 10px;
 }
 
-.redes a{
-    font-size: 2rem;
-    color:white;
-    margin: 5rem;
-    
+.footer {
+  background: black;
+  height: 20px;
 }
-.redes a:hover{
-    color: blue;
+.footer .redes {
+  width: 100%;
+  height: 45px;
+  background: #242222;
 }
+.footer .enlaceRedes {
+  width: 100px;
+  height: 100%;
+  margin: 20px;
+  color: #2e2e9b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=estilos.css.map */

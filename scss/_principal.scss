@@ -1,0 +1,63 @@
+body{
+    background: black;
+}
+
+
+/*Anidamiento*/
+
+
+.lista{
+    list-style: none;
+
+    .itemLista{
+    padding: 16px;
+    display: inline-block;
+    &:hover{
+        background-color: rgb(92, 63, 63);
+        border-radius: 10%;
+        
+    }
+    
+     .enlaceLista{
+         text-decoration: none;
+         font-size: 16px;
+         color:blue;
+         &:active{
+             border:solid aqua 1px;
+         }
+         &:link{
+             color:rebeccapurple;
+         }
+         &:visited{
+             color:#6d6d6d;
+             background-color: beige;
+         }
+         
+     }
+
+    }
+
+ 
+
+}
+$fondo: rgb(12, 12, 12);
+.principal{
+background-color:$fondo;
+    .titulo{
+        padding-top: 30%;
+        font-size: 50px;
+        color: rgb(77, 200, 110);
+        text-align: center;
+        
+       
+    }
+    .titulo2{
+        font-size: 30px;
+        color: rgb(73, 1, 1);
+        
+    }
+    .textoIndex{
+        font-size: 20px;
+        color: white;
+    }
+}
